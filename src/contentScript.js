@@ -5,7 +5,6 @@ const cn2tw = require('./utils/cn2tw');
 /**
  * 遞迴地遍歷 DOM，將所有純文字節點的內容傳入替換函數處理，
  * 若內容被修改，則使用安全的 HTML 插入方式替換原節點。
- * 
  * 僅處理 Text Node，保留原有 DOM 結構與事件監聽器。
  * 會將替換結果視為 HTML 字串，並轉為實際 DOM 節點插入。
  * 不處理 SCRIPT、STYLE、TEXTAREA 等不應變動的節點。
